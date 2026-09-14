@@ -92,7 +92,7 @@ const footerHTML = `
             </div>
             
             <div class="logo-item">
-              <a href="https://www.instagram.com/guia.janu" target="_blank" class="logo-link">
+              <a href="../../pages/aboutUs.html" target="_blank" class="logo-link">
                 <p>UCE-BSI</p>
                 <img src="../../assets/img/Logo/uce-logo-notext.png" alt="Logo UCE-BSI" class="partner-logo logo-insta">
               </a>
