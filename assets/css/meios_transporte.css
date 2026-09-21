@@ -1,0 +1,749 @@
+/* ==========================================================================
+   MEIOS DE TRANSPORTE
+   Estilos específicos da página
+   ========================================================================== */
+
+
+/* ==========================================================================
+   01. IMAGEM PRINCIPAL
+   ========================================================================== */
+
+.hero-transporte {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+
+/*
+   Mantém a proporção original.
+   A imagem não será cortada.
+*/
+
+.hero-transporte > img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+.transporte-copyright {
+    right: 15px;
+    bottom: 15px;
+}
+
+
+/*
+   Espaço entre a imagem principal
+   e a primeira onda verde.
+*/
+
+.espaco-hero-wave {
+    width: 100%;
+    height: 35px;
+
+    background: #ffffff;
+}
+
+
+
+/* ==========================================================================
+   02. TÍTULO PRINCIPAL
+   ========================================================================== */
+
+.titulo-pagina-transporte {
+    max-width: 900px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.titulo-pagina-transporte h1 {
+    margin-bottom: 15px;
+
+    color: var(--cor-destaque);
+
+    font-size: 44px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.titulo-pagina-transporte p {
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+
+/* ==========================================================================
+   03. TÍTULOS DAS SEÇÕES
+   ========================================================================== */
+
+.titulo-secao {
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    text-align: left;
+}
+
+
+.titulo-secao h2 {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.titulo-secao-claro h2 {
+    color: var(--cor-destaque);
+}
+
+
+.titulo-secao-escuro h2 {
+    color: #111111;
+}
+
+
+
+/* ==========================================================================
+   04. BICICLETA
+   ========================================================================== */
+
+.texto-transporte {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+.texto-transporte p {
+    margin-bottom: 24px;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+.texto-transporte p:last-child {
+    margin-bottom: 0;
+}
+
+
+.texto-transporte strong {
+    color: var(--cor-destaque);
+}
+
+
+
+/* ==========================================================================
+   05. APLICATIVOS - INTRODUÇÃO
+   ========================================================================== */
+
+.texto-introducao-claro {
+    max-width: 900px;
+
+    margin: 0 auto 45px;
+
+    text-align: left;
+}
+
+
+.texto-introducao-claro p {
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+
+/* ==========================================================================
+   06. APLICATIVOS
+   ========================================================================== */
+
+.aplicativo {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 38px 0;
+
+    text-align: left;
+
+    border: none;
+}
+
+
+.aplicativo-logo-area {
+    width: 150px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.aplicativo-logo {
+    width: 120px;
+    height: 120px;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+}
+
+
+.aplicativo-conteudo {
+    flex: 1;
+}
+
+
+.aplicativo-conteudo h3 {
+    margin-bottom: 10px;
+
+    color: var(--cor-destaque);
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.aplicativo-conteudo p {
+    max-width: 680px;
+
+    margin-bottom: 22px;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+
+/* ==========================================================================
+   07. BOTÕES ANDROID / IOS
+   ========================================================================== */
+
+.downloads-app {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.download-sistema {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.download-sistema span {
+    color: rgba(255, 255, 255, 0.70);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.download-sistema a {
+    display: block;
+}
+
+
+.download-sistema a:hover {
+    text-decoration: none;
+}
+
+
+.download-sistema img {
+    width: 175px;
+    height: 58px;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+.download-sistema img:hover {
+    transform: translateY(-3px);
+
+    opacity: 0.85;
+}
+
+
+
+/* ==========================================================================
+   08. TÁXI
+   ========================================================================== */
+
+.transporte-local-wrapper {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+.texto-transporte-local {
+    flex: 1;
+
+    max-width: 520px;
+}
+
+
+.texto-transporte-local > p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+.texto-transporte-local strong {
+    color: var(--cor-destaque);
+}
+
+
+
+/* ==========================================================================
+   09. MAPA DO TÁXI
+   ========================================================================== */
+
+/*
+   O pontos_turisticos_base.css já possui
+   .mapa-box, mas nesta página precisamos
+   manter esse mapa pequeno e quadrado.
+*/
+
+.mapa-taxi {
+    width: 360px;
+
+    flex: 0 0 360px;
+}
+
+.mapa-box-taxi {
+    width: 360px;
+    height: 360px;
+
+    min-width: 360px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.mapa-box-taxi iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+
+/* ==========================================================================
+   10. MOTOTÁXI
+   ========================================================================== */
+
+.mototaxi-wrapper {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+.texto-mototaxi {
+    flex: 1;
+
+    max-width: 520px;
+
+    margin: 0;
+
+    text-align: left;
+}
+
+
+.texto-mototaxi p {
+    color: #222222;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+.texto-mototaxi p:last-child {
+    margin-bottom: 0;
+}
+
+
+.mapa-mototaxi {
+    width: 360px;
+
+    flex: 0 0 360px;
+}
+
+.mapa-box-mototaxi {
+    width: 360px;
+    height: 360px;
+
+    min-width: 360px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.mapa-box-mototaxi iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+
+/* ==========================================================================
+   11. LISTA DE MOTOTÁXIS
+   ========================================================================== */
+
+.lista-mototaxi {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+
+.ponto-mototaxi {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 50px;
+
+    padding: 20px 0;
+
+    border: none;
+}
+
+
+.ponto-mototaxi-nome {
+    width: 220px;
+
+    flex-shrink: 0;
+
+    color: #111111;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+.ponto-mototaxi-info {
+    flex: 1;
+}
+
+
+.ponto-mototaxi-info p {
+    margin-bottom: 7px;
+
+    color: #333333;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+.ponto-mototaxi-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+.ponto-mototaxi-info strong {
+    color: #111111;
+}
+
+
+
+/* ==========================================================================
+   12. RESPONSIVIDADE
+   ========================================================================== */
+
+@media (max-width: 991px) {
+
+    /* TÁXI */
+
+    .transporte-local-wrapper {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 35px;
+    }
+
+
+    .texto-transporte-local {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .mapa-taxi {
+        width: 300px;
+
+        flex: none;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* ==========================================================
+       HERO
+       ========================================================== */
+
+    .espaco-hero-wave {
+        height: 20px;
+    }
+
+
+
+    /* ==========================================================
+       TÍTULOS
+       ========================================================== */
+
+    .titulo-pagina-transporte {
+        margin-bottom: 45px;
+    }
+
+
+    .titulo-pagina-transporte h1 {
+        font-size: 34px;
+    }
+
+
+    .titulo-pagina-transporte p {
+        font-size: 16px;
+    }
+
+
+    .titulo-secao {
+        margin-bottom: 25px;
+    }
+
+
+    .titulo-secao h2 {
+        font-size: 26px;
+    }
+
+
+
+    /* ==========================================================
+       TEXTOS
+       ========================================================== */
+
+    .texto-transporte p,
+    .texto-introducao-claro p,
+    .texto-transporte-local > p,
+    .texto-mototaxi p {
+        font-size: 16px;
+
+        text-align: left;
+    }
+
+
+
+    /* ==========================================================
+       APLICATIVOS
+       ========================================================== */
+
+    .aplicativo {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 30px 0;
+
+        text-align: center;
+    }
+
+
+    .aplicativo-logo-area {
+        width: auto;
+    }
+
+
+    .aplicativo-logo {
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .aplicativo-conteudo p {
+        max-width: 500px;
+    }
+
+
+    .downloads-app {
+        justify-content: center;
+    }
+
+
+    .download-sistema {
+        align-items: center;
+    }
+
+
+
+    /* ==========================================================
+       MOTOTÁXI
+       ========================================================== */
+
+    .ponto-mototaxi {
+        flex-direction: column;
+
+        gap: 6px;
+
+        padding: 17px 0;
+    }
+
+
+    .ponto-mototaxi-nome {
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    /* ==========================================================
+       TÍTULO
+       ========================================================== */
+
+    .titulo-pagina-transporte h1 {
+        font-size: 30px;
+    }
+
+
+
+    /* ==========================================================
+       DOWNLOADS
+       ========================================================== */
+
+    .downloads-app {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+
+    /* ==========================================================
+       MAPA
+       ========================================================== */
+
+    .mapa-taxi {
+        width: 100%;
+    }
+
+
+    .mapa-box-taxi {
+        width: 100%;
+        min-width: 0;
+
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+}
