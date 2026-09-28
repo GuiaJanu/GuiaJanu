@@ -37,7 +37,7 @@ const headerHTML = `
                     </label>
 
                     <ul class="dropdown">
-                        <li><a href="../pages/cat.html">Atendimento</a></li>
+                        <li><a href="../pages/cat.html">CAT</a></li>
                         <li><a href="../pages/guiaoficial.html">Guia Oficial</a></li>
                         <li><a href="../pages/aboutUs.html">Sobre nós</a></li>
                     </ul>
