@@ -15,7 +15,7 @@ const footerHTML = `
         <div class="footer-col links-col">
           <h4>Conheça nosso app</h4>
           <ul>
-            <li><a href="../pages/emconstrucao.html">JanuTour</a></li>
+            <li><a href="../emconstrucao.html">JanuTour</a></li>
 
             </ul>
         </div>
@@ -34,19 +34,19 @@ const footerHTML = `
         <div class="footer-col links-col">
           <h4>O que fazer</h4>
           <ul>
-            <li><a href="../pages/ListagemPontosTuristicos.html">Pontos Turísticos</a></li>
+            <li><a href="../ListagemPontosTuristicos.html">Pontos Turísticos</a></li>
           </ul>
         </div>
         <div class="footer-col links-col">
           <h4>Onde comer</h4>
           <ul>
-            <li><a href="../pages/emconstrucao.html">Em construção</a></li>
+            <li><a href="../emconstrucao.html">Em construção</a></li>
           </ul>
         </div>
         <div class="footer-col links-col">
           <h4>Onde ficar</h4>
           <ul>
-            <li><a href="../pages/emconstrucao.html">Em construção</a></li>
+            <li><a href="../emconstrucao.html">Em construção</a></li>
           </ul>
         </div>
         <div class="footer-col links-col">
