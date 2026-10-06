@@ -1,7 +1,7 @@
 const headerElement = document.querySelector('.site-header');
 
 const headerHTML = `
-        <a href="../index.html"><img src="../assets/img/Logo/TauriLogo2.webp" alt="Logo GuiaJanu" class="logo-header"></a>
+        <a href="../index.html"><img src="../assets/img/logo/tauri_logo2.webp" alt="Logo GuiaJanu" class="logo-header"></a>
         
         <input type="checkbox" id="menu-mobile-check" class="menu-checkbox" hidden>
 
@@ -19,14 +19,14 @@ const headerHTML = `
                     </label>
 
                     <ul class="dropdown">
-                        <li><a href="../pages/acidade.html">A cidade</a></li>
-                        <li><a href="../pages/comochegar.html">Como chegar</a></li>
+                        <li><a href="../pages/a_cidade.html">A cidade</a></li>
+                        <li><a href="../pages/como_chegar.html">Como chegar</a></li>
                     </ul>
                 </li>
                 
-                <li><a href="./ListagemPontosTuristicos.html">O que fazer</a></li>
-                <li><a href="./emconstrucao.html">Onde comer</a></li>
-                <li><a href="./emconstrucao.html">Onde ficar</a></li>
+                <li><a href="./listagem_pontos_turisticos.html">O que fazer</a></li>
+                <li><a href="./em_construcao.html">Onde comer</a></li>
+                <li><a href="./em_construcao.html">Onde ficar</a></li>
                 
                 <li>
                     <input type="checkbox" id="drop-2" class="drop-checkbox" hidden>
@@ -38,8 +38,8 @@ const headerHTML = `
 
                     <ul class="dropdown">
                         <li><a href="../pages/cat.html">CAT</a></li>
-                        <li><a href="../pages/guiaoficial.html">Guia Oficial</a></li>
-                        <li><a href="../pages/aboutUs.html">Sobre nós</a></li>
+                        <li><a href="../pages/guia_oficial.html">Guia Oficial</a></li>
+                        <li><a href="../pages/about_us.html">Sobre nós</a></li>
                     </ul>
                 </li>
             </ul>
@@ -47,7 +47,7 @@ const headerHTML = `
 
         <div class="header-right">
             <a href="https://www.instagram.com/guia.janu" class="social-icon" target="_blank">
-                <img src="../assets/img/Social_Icons/insta_logo.webp" alt="Instagram">
+                <img src="../assets/img/social_icons/insta_logo.webp" alt="Instagram">
             </a>
             <label for="menu-mobile-check" class="menu-toggle" aria-label="Abrir e Fechar menu"></label>
         </div>

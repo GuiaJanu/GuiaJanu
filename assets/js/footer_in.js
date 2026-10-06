@@ -17,15 +17,15 @@ const footerHTML = `
         <div class="footer-col links-col">
           <h4>Conheça nosso app</h4>
           <ul>
-            <li><a href="./pages/emconstrucao.html">JanuTour</a></li>
+            <li><a href="./pages/em_construcao.html">JanuTour</a></li>
             </ul>
         </div>
 
         <div class="footer-col links-col">
           <h4>Descubra Januária</h4>
           <ul>
-            <li><a href="./pages/acidade.html">A cidade</a></li>
-            <li><a href="./pages/comochegar.html">Como chegar</a></li>
+            <li><a href="./pages/a_cidade.html">A cidade</a></li>
+            <li><a href="./pages/como_chegar.html">Como chegar</a></li>
             </ul>
         </div>
 
@@ -35,27 +35,27 @@ const footerHTML = `
         <div class="footer-col links-col">
           <h4>O que fazer</h4>
           <ul>
-            <li><a href="./pages/ListagemPontosTuristicos.html">Pontos Turísticos</a></li>
+            <li><a href="./pages/listagem_pontos_turisticos.html">Pontos Turísticos</a></li>
           </ul>
         </div>
         <div class="footer-col links-col">
           <h4>Onde comer</h4>
           <ul>
-            <li><a href="./pages/emconstrucao.html">Em construção</a></li>
+            <li><a href="./pages/em_construcao.html">Em construção</a></li>
           </ul>
         </div>
         <div class="footer-col links-col">
           <h4>Onde ficar</h4>
           <ul>
-            <li><a href="./pages/emconstrucao.html">Em construção</a></li>
+            <li><a href="./pages/em_construcao.html">Em construção</a></li>
           </ul>
         </div>
         <div class="footer-col links-col">
           <h4>Mais</h4>
           <ul>
             <li><a href="./pages/cat.html">Centro de Atendimento<br>ao Turista</a></li>
-            <li><a href="./pages/guiaoficial.html">Guia Oficial</a></li>
-            <li><a href="./pages/aboutUs.html">Sobre nós</a></li>
+            <li><a href="./pages/guia_oficial.html">Guia Oficial</a></li>
+            <li><a href="./pages/about_us.html">Sobre nós</a></li>
           </ul>
         </div>
       </div>
@@ -83,7 +83,7 @@ const footerHTML = `
             <div class="logo-item">
               <a href="https://www.ifnmg.edu.br/januaria" target="_blank" class="logo-link">
                 <p>IFNMG</p>
-                <img src="./assets/img/Logo/IFNMG3.webp" alt="Logo IFNMG Campus Januária" class="partner-logo">
+                <img src="./assets/img/logo/ifnmg3.webp" alt="Logo IFNMG Campus Januária" class="partner-logo">
                 <p class="ifnmg">
                   <span class="linha1">INSTITUTO FEDERAL</span>
                   <span class="linha2">Norte de Minas Gerais</span>
@@ -95,14 +95,14 @@ const footerHTML = `
             <div class="logo-item">
               <a href="https://www.instagram.com/guia.janu" target="_blank" class="logo-link">
                 <p>UCE-BSI</p>
-                <img src="./assets/img/Logo/uce-logo-notext.png" alt="Logo UCE-BSI" class="partner-logo logo-insta">
+                <img src="./assets/img/logo/uce_logo_notext.png" alt="Logo UCE-BSI" class="partner-logo logo-insta">
               </a>
             </div>
             
             <div class="logo-item">
               <a href="https://www.instagram.com/petadmifnmg" target="_blank" class="logo-link">
                 <p>PET-ADM</p>
-                <img src="./assets/img/Parcerias/PETADM.webp" alt="Logo PET-ADM" class="partner-logo">
+                <img src="./assets/img/parcerias/petadm.webp" alt="Logo PET-ADM" class="partner-logo">
               </a>
             </div>
             
@@ -116,7 +116,7 @@ const footerHTML = `
             <div class="logo-item">
               <a href="https://www.januaria.mg.gov.br/portal/secretarias/26/setur--secretaria-municipal-de-turismo-cultura-meio-ambiente-e-desenvolvimento-economico" target="_blank" class="logo-link">
                 <p>SETUR</p>
-                <img src="./assets/img/Parcerias/SETUR.webp" alt="Setur" class="partner-logo">
+                <img src="./assets/img/parcerias/setur.webp" alt="Setur" class="partner-logo">
               </a>
             </div>
           </div>

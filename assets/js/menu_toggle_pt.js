@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const volumeIcon = document.getElementById('volume-icon');
     const volumeSlider = document.getElementById('volume-slider');
 
-    const MUTE_ICON_SRC = '../../assets/img/Social_Icons/sem_som.webp';
-    const UNMUTE_ICON_SRC = '../../assets/img/Social_Icons/com_som.webp';
+    const MUTE_ICON_SRC = '../../assets/img/social_icons/sem_som.webp';
+    const UNMUTE_ICON_SRC = '../../assets/img/social_icons/com_som.webp';
 
     const TARGET_VOLUME = 0.20;
 
