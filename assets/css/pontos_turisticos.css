@@ -154,30 +154,62 @@ a:hover {
 
 /* LISTAGEM */
 .list-section {
-    padding: 40px 20px 150px;
-    background-color: #e9962c;
+    padding: 60px 20px 100px;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Alterado para column para organizar o h2 acima dos cards */
+    align-items: center;
+}
+
+.list-section h2 {
+    font-family: var(--font-titulos, 'Rye', serif);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Cores de fundo separadas por Seção */
+#atrativos-naturais, #espacos-publicos {
+    background-color: #e9962c;
+}
+
+#espacos-culturais {
+    background-color: #084222;
+}
+
+#turismo-comunitario {
+    background-color: #8f2317;
+}
+
+/* Ajuste de contraste para o texto dos cards nas seções escuras */
+#espacos-culturais .card-title,
+#turismo-comunitario .card-title {
+    color: #ffffff;
+}
+
+/* Mantém o texto dos cards preto nas seções amarelas (claras) */
+#atrativos-naturais .card-title,
+#espacos-publicos .card-title {
+    color: #000000;
 }
 
 .list-cards-container {
     width: 100%;
     max-width: 1200px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    justify-content: center;
-
+    display: flex;          /* Alterado de grid para flex */
+    flex-wrap: wrap;        /* Permite que os cards pulem de linha */
+    justify-content: center;/* Centraliza os cards em todas as linhas */
     gap: 32px 70px;
     margin: 0 auto;
 }
 
 .list-cards-container .card {
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     background: transparent;
     padding: 0;
     border-radius: 10px;
@@ -241,9 +273,9 @@ a:hover {
 
 @media (max-width: 1024px) {
     .list-cards-container {
-        grid-template-columns: repeat(2, 300px);
         gap: 32px 40px;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -359,9 +391,12 @@ a:hover {
         padding: 60px 15px 150px;
     }
 
+    .list-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
     .list-cards-container {
-        grid-template-columns: 1fr;
-        justify-items: center;
         gap: 32px;
     }
 

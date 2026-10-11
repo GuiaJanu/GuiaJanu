@@ -106,13 +106,11 @@ a {
 .content-wrapper {
     position: relative;
     z-index: 2;
-    /* margin-top: 100vh; <-- REMOVA ESTA LINHA */
     background: transparent;
     width: 100%;
     max-width: 100%;
 }
 
-/* Agrupamento de regras comuns de layout para seções */
 .discover-section,
 .plan-section,
 .events-section {
@@ -129,12 +127,10 @@ a {
     z-index: 0;
 }
 
-/* Modificadores de Fundo */
 .discover-section { background: var(--color-discover); }
 .plan-section { background: var(--color-plan); }
 .events-section { background: var(--color-events); }
 
-/* Títulos das Seções */
 .section-title {
     font-family: var(--font-secondary);
     font-size: 52px;
@@ -162,7 +158,6 @@ a {
     gap: 40px;
 }
 
-/* Base do Card */
 .card {
     display: flex;
     flex-direction: column;
@@ -179,7 +174,6 @@ a {
     overflow: hidden;
 }
 
-/* Imagens Circulares e Mosaico (Regras Comuns) */
 .circle-image,
 .mais-mosaico {
     width: 220px;
@@ -190,7 +184,6 @@ a {
     transition: transform var(--transition-speed) ease;
 }
 
-/* Imagem Única */
 .circle-image {
     margin: 0 auto;
     background-size: cover;
@@ -204,7 +197,6 @@ a {
     border-radius: 50%;
 }
 
-/* Mosaico */
 .mais-mosaico {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -218,13 +210,11 @@ a {
     object-fit: cover;
 }
 
-/* Efeitos de Hover nas Imagens */
 .card:hover .circle-image,
 .card:hover .mais-mosaico {
     transform: scale(1.1);
 }
 
-/* Tipografia dos Cards */
 .card-title {
     font-size: 38px;
     font-weight: normal;
@@ -252,7 +242,6 @@ a {
     font-size: 24px;
 }
 
-/* Hover Links */
 .card-link:hover,
 .plan-section .card-link:hover {
     color: var(--color-link-hover);
