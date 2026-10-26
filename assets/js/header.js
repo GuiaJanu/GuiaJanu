@@ -39,6 +39,7 @@ const headerHTML = `
                     <ul class="dropdown">
                         <li><a href="../pages/cat.html">CAT</a></li>
                         <li><a href="../pages/guia_oficial.html">Guia Oficial</a></li>
+                        <li><a href="../pages/meios_de_transporte.html">Meios de Transporte</a></li>
                         <li><a href="../pages/about_us.html">Sobre nós</a></li>
                     </ul>
                 </li>

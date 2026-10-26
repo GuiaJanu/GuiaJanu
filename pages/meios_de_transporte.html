@@ -1,587 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Meios de Transporte - Guia Janu</title>
-
     <link rel="shortcut icon" href="../assets/img/logo/favicon.ico">
-
-    <!-- CSS BASE -->
-    <link
-        rel="stylesheet"
-        href="../assets/css/pontos_turisticos_css/pontos_turisticos_base.css"
-    >
-
-    <!-- CSS GERAL -->
+    <link rel="stylesheet" href="../assets/css/pontos_turisticos_css/pontos_turisticos_base.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/wave.css">
-
-    <!-- CSS ESPECÍFICO -->
     <link rel="stylesheet" href="../assets/css/meios_transporte.css">
-
-    <!-- JAVASCRIPT -->
-    <script src="../assets/js/header.js" defer></script>
     <script src="../assets/js/footer.js" defer></script>
     <script src="../assets/js/wave.js" defer></script>
 </head>
-
-
 <body>
-
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
-    <header class="site-header"></header>
-
+    <header class="site-header">
+        <a href="../index.html"><img src="../assets/img/logo/tauri_logo2.webp" alt="Logo GuiaJanu" class="logo-header"></a>
+        <input type="checkbox" id="menu-mobile-check" class="menu-checkbox" hidden>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li>
+                    <input type="checkbox" id="drop-1" class="drop-checkbox" hidden>
+                    <label for="drop-1" class="link-wrapper">
+                        <span class="drop-text">Descubra Januária</span>
+                        <span class="drop-icon">▾</span>
+                    </label>
+                    <ul class="dropdown">
+                        <li><a href="../pages/como_chegar.html">Como chegar</a></li>
+                    </ul>
+                </li>
+                <li><a href="./listagem_pontos_turisticos.html">O que fazer</a></li>
+                <li><a href="./em_construcao.html">Onde comer</a></li>
+                <li><a href="./em_construcao.html">Onde ficar</a></li>
+                <li>
+                    <input type="checkbox" id="drop-2" class="drop-checkbox" hidden>
+                    <label for="drop-2" class="link-wrapper">
+                        <span class="drop-text">Mais</span>
+                        <span class="drop-icon">▾</span>
+                    </label>
+                    <ul class="dropdown">
+                        <li><a href="../pages/cat.html">Atendimento</a></li>
+                        <li><a href="../pages/guia_oficial.html">Guia Oficial</a></li>
+                        <li><a href="../pages/about_us.html">Sobre nós</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="https://www.instagram.com/guia.janu" class="social-icon" target="_blank">
+                <img src="../assets/img/social_icons/insta_logo.webp" alt="Instagram">
+            </a>
+            <label for="menu-mobile-check" class="menu-toggle" aria-label="Abrir e Fechar menu"></label>
+        </div>
+    </header>
 
     <main>
-
-
-        <!-- =====================================================
-             IMAGEM PRINCIPAL
-        ====================================================== -->
-
         <section class="hero-transporte">
-
-            <img
-                src="../assets/img/meios_de_transporte/imagem_principal.png"
-                alt="Meios de Transporte em Januária"
-            >
-
-            <div class="copyright-tag transporte-copyright">
-                © Guia Janu
-            </div>
-
+            <img src="../assets/img/meios_de_transporte/imagem_principal.png" alt="Meios de Transporte em Januária">
+            <div class="copyright-tag transporte-copyright">© Guia Janu</div>
         </section>
-
-
-        <!-- Espaço antes da primeira onda -->
-
         <div class="espaco-hero-wave"></div>
-
-
-
-        <!-- =====================================================
-             MOBILIDADE / BICICLETA
-        ====================================================== -->
 
         <wave-separator-component color="#084222"></wave-separator-component>
 
-
         <section class="section-verde">
-
             <div class="conteudo-limitado">
-
-
                 <div class="texto-transporte">
-
-                    <p>
-                        Januária possui boa parte de sua área urbana com
-                        <strong>relevo plano</strong>, característica que
-                        facilita os deslocamentos pela cidade.
-                    </p>
-
-                    <p>
-                        Para percursos mais curtos, a
-                        <strong>bicicleta</strong> pode ser uma alternativa
-                        prática e econômica, especialmente para quem deseja
-                        conhecer diferentes regiões da área urbana de forma
-                        mais tranquila.
-                    </p>
-
-                    <p>
-                        Dependendo da distância, do destino e da necessidade
-                        do visitante, também é possível utilizar aplicativos
-                        de transporte, táxis e mototáxis.
-                    </p>
-
+                    <p>Januária possui boa parte de sua área urbana com <strong>relevo plano</strong>, característica que facilita os deslocamentos pela cidade.</p>
+                    <p>Para percursos mais curtos, a <strong>bicicleta</strong> pode ser uma alternativa prática e econômica, especialmente para quem deseja conhecer diferentes regiões da área urbana de forma mais tranquila.</p>
+                    <p>Dependendo da distância, do destino e da necessidade do visitante, também é possível utilizar aplicativos de transporte, táxis e mototáxis.</p>
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- =====================================================
-             APLICATIVOS DE TRANSPORTE
-        ====================================================== -->
 
         <wave-separator-component color="#072530"></wave-separator-component>
 
-
         <section class="section-azul">
-
             <div class="conteudo-limitado">
-
-
-                <!-- TÍTULO -->
-
                 <div class="titulo-secao titulo-secao-claro">
-
-                    <h2>
-                        Aplicativos de Transporte
-                    </h2>
-
+                    <h2>Aplicativos de Transporte</h2>
                 </div>
-
-
-                <!-- INTRODUÇÃO -->
-
                 <div class="texto-introducao-claro">
-
-                    <p>
-                        Para quem prefere solicitar uma corrida diretamente
-                        pelo celular, alguns aplicativos de mobilidade podem
-                        ser utilizados em Januária. A disponibilidade de
-                        motoristas pode variar conforme o horário e a região
-                        da cidade.
-                    </p>
-
+                    <p>Para quem prefere solicitar uma corrida diretamente pelo celular, alguns aplicativos de mobilidade podem ser utilizados em Januária. A disponibilidade de motoristas pode variar conforme o horário e a região da cidade.</p>
                 </div>
-
-
-
-                <!-- =================================================
-                     99
-                ================================================== -->
-
                 <div class="aplicativo">
-
                     <div class="aplicativo-logo-area">
-
-                        <img
-                            src="../assets/img/logo/logo_99.png"
-                            alt="Logo 99"
-                            class="aplicativo-logo"
-                        >
-
+                        <img src="../assets/img/logo/logo_99.png" alt="Logo 99" class="aplicativo-logo">
                     </div>
-
-
                     <div class="aplicativo-conteudo">
-
-                        <h3>
-                            99
-                        </h3>
-
-                        <p>
-                            99 Corridas, Food & Pay. Aplicativo de
-                            mobilidade disponível para dispositivos
-                            Android e iOS.
-                        </p>
-
-
+                        <h3>99</h3>
+                        <p>99 Corridas, Food & Pay. Aplicativo de mobilidade disponível para dispositivos Android e iOS.</p>
                         <div class="downloads-app">
-
-
-                            <!-- ANDROID -->
-
                             <div class="download-sistema">
-
-                                <span>
-                                    Android
-                                </span>
-
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.taxis99&pcampaignid=web_share"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <img
-                                        src="../assets/img/logo/andoid.png"
-                                        alt="Baixar 99 para Android"
-                                    >
-
+                                <span>Android</span>
+                                <a href="https://play.google.com/store/apps/details?id=com.taxis99&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                                    <img src="../assets/img/logo/andoid.png" alt="Baixar 99 para Android">
                                 </a>
-
                             </div>
-
-
-                            <!-- IOS -->
-
                             <div class="download-sistema">
-
-                                <span>
-                                    iOS
-                                </span>
-
-                                <a
-                                    href="https://apps.apple.com/br/app/99-corridas-food-pay/id553663691"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <img
-                                        src="../assets/img/logo/ios.png"
-                                        alt="Baixar 99 para iPhone"
-                                    >
-
+                                <span>iOS</span>
+                                <a href="https://apps.apple.com/br/app/99-corridas-food-pay/id553663691" target="_blank" rel="noopener noreferrer">
+                                    <img src="../assets/img/logo/ios.png" alt="Baixar 99 para iPhone">
                                 </a>
-
                             </div>
-
-
                         </div>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- =================================================
-                     PEGUE CAR
-                ================================================== -->
-
                 <div class="aplicativo">
-
                     <div class="aplicativo-logo-area">
-
-                        <img
-                            src="../assets/img/logo/logo_peguecar.jpg"
-                            alt="Logo Pegue Car"
-                            class="aplicativo-logo"
-                        >
-
+                        <img src="../assets/img/logo/logo_peguecar.jpg" alt="Logo Pegue Car" class="aplicativo-logo">
                     </div>
-
-
                     <div class="aplicativo-conteudo">
-
-                        <h3>
-                            Pegue Car
-                        </h3>
-
-                        <p>
-                            Aplicativo de transporte disponível para
-                            dispositivos Android e iOS.
-                        </p>
-
-
+                        <h3>Pegue Car</h3>
+                        <p>Aplicativo de transporte disponível para dispositivos Android e iOS.</p>
                         <div class="downloads-app">
-
-
-                            <!-- ANDROID -->
-
                             <div class="download-sistema">
-
-                                <span>
-                                    Android
-                                </span>
-
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=br.com.devbase.peguecar&pcampaignid=web_share"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <img
-                                        src="../assets/img/logo/andoid.png"
-                                        alt="Baixar Pegue Car para Android"
-                                    >
-
+                                <span>Android</span>
+                                <a href="https://play.google.com/store/apps/details?id=br.com.devbase.peguecar&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                                    <img src="../assets/img/logo/andoid.png" alt="Baixar Pegue Car para Android">
                                 </a>
-
                             </div>
-
-
-                            <!-- IOS -->
-
                             <div class="download-sistema">
-
-                                <span>
-                                    iOS
-                                </span>
-
-                                <a
-                                    href="https://apps.apple.com/br/app/peguecar/id6502292156"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <img
-                                        src="../assets/img/logo/ios.png"
-                                        alt="Baixar Pegue Car para iPhone"
-                                    >
-
+                                <span>iOS</span>
+                                <a href="https://apps.apple.com/br/app/peguecar/id6502292156" target="_blank" rel="noopener noreferrer">
+                                    <img src="../assets/img/logo/ios.png" alt="Baixar Pegue Car para iPhone">
                                 </a>
-
                             </div>
-
-
                         </div>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- =================================================
-                     UBIZ CAR BRASIL
-                ================================================== -->
-
                 <div class="aplicativo">
-
                     <div class="aplicativo-logo-area">
-
-                        <img
-                            src="../assets/img/logo/logo_ubizcar.jpg"
-                            alt="Logo Ubiz Car Brasil"
-                            class="aplicativo-logo"
-                        >
-
+                        <img src="../assets/img/logo/logo_ubizcar.jpg" alt="Logo Ubiz Car Brasil" class="aplicativo-logo">
                     </div>
-
-
                     <div class="aplicativo-conteudo">
-
-                        <h3>
-                            Ubiz Car Brasil
-                        </h3>
-
-                        <p>
-                            Aplicativo de mobilidade disponível para
-                            dispositivos Android e iOS.
-                        </p>
-
-
+                        <h3>Ubiz Car Brasil</h3>
+                        <p>Aplicativo de mobilidade disponível para dispositivos Android e iOS.</p>
                         <div class="downloads-app">
-
-
-                            <!-- ANDROID -->
-
                             <div class="download-sistema">
-
-                                <span>
-                                    Android
-                                </span>
-
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=br.com.ubizcarbahia.passenger.drivermachine&pcampaignid=web_share"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <img
-                                        src="../assets/img/logo/andoid.png"
-                                        alt="Baixar Ubiz Car Brasil para Android"
-                                    >
-
+                                <span>Android</span>
+                                <a href="https://play.google.com/store/apps/details?id=br.com.ubizcarbahia.passenger.drivermachine&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                                    <img src="../assets/img/logo/andoid.png" alt="Baixar Ubiz Car Brasil para Android">
                                 </a>
-
                             </div>
-
-
-                            <!-- IOS -->
-
                             <div class="download-sistema">
-
-                                <span>
-                                    iOS
-                                </span>
-
-                                <a
-                                    href="https://apps.apple.com/br/app/ubiz-car-brasil/id1486657267"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <img
-                                        src="../assets/img/logo/ios.png"
-                                        alt="Baixar Ubiz Car Brasil para iPhone"
-                                    >
-
+                                <span>iOS</span>
+                                <a href="https://apps.apple.com/br/app/ubiz-car-brasil/id1486657267" target="_blank" rel="noopener noreferrer">
+                                    <img src="../assets/img/logo/ios.png" alt="Baixar Ubiz Car Brasil para iPhone">
                                 </a>
-
                             </div>
-
-
                         </div>
-
                     </div>
-
                 </div>
-
-
             </div>
-
         </section>
-
-
-
-        <!-- =====================================================
-             TÁXI
-        ====================================================== -->
 
         <wave-separator-component color="#8f2317"></wave-separator-component>
 
-
         <section class="section-vermelho">
-
             <div class="conteudo-limitado">
-
-
-                <!-- TÍTULO -->
-
                 <div class="titulo-secao titulo-secao-claro">
-
-                    <h2>
-                        Táxi
-                    </h2>
-
+                    <h2>Táxi</h2>
                 </div>
-
-
                 <div class="transporte-local-wrapper">
-
-
-                    <!-- TEXTO -->
-
                     <div class="texto-transporte-local">
-
-                        <p>
-                            Outra opção para se locomover por Januária é
-                            utilizar o serviço de <strong>táxi</strong>.
-
-                            Um dos pontos de referência está localizado
-                            na <strong>Rodoviária de Januária</strong>,
-                            facilitando principalmente o deslocamento de
-                            visitantes que chegam ou deixam a cidade
-                            de ônibus.
-                        </p>
-
+                        <p>Outra opção para se locomover por Januária é utilizar o serviço de <strong>táxi</strong>. Um dos pontos de referência está localizado na <strong>Rodoviária de Januária</strong>, facilitando principalmente o deslocamento de visitantes que chegam ou deixam a cidade de ônibus.</p>
                     </div>
-
-
-                    <!-- MAPA -->
-
                     <div class="mapa-taxi">
-
                         <div class="mapa-box mapa-box-taxi">
-
-                            <iframe
-                                src="https://www.google.com/maps?q=Rodovi%C3%A1ria+de+Janu%C3%A1ria+MG&output=embed"
-                                loading="lazy"
-                                allowfullscreen=""
-                                referrerpolicy="no-referrer-when-downgrade"
-                                title="Rodoviária de Januária"
-                            >
-                            </iframe>
-
+                            <iframe src="https://www.google.com/maps?q=Rodovi%C3%A1ria+de+Janu%C3%A1ria+MG&output=embed" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Rodoviária de Januária"></iframe>
                         </div>
-
                     </div>
-
-
                 </div>
-
             </div>
-
         </section>
-
-
-
-        <!-- =====================================================
-             MOTOTÁXI
-        ====================================================== -->
 
         <wave-separator-component color="#e99931"></wave-separator-component>
 
-
         <section class="section-amarelo">
-
             <div class="conteudo-limitado">
-
-
-                <!-- TÍTULO -->
-
                 <div class="titulo-secao titulo-secao-escuro">
-
-                    <h2>
-                        Mototáxi
-                    </h2>
-
+                    <h2>Mototáxi</h2>
                 </div>
-
-
                 <div class="mototaxi-wrapper">
-
-
-                    <!-- TEXTO -->
-
                     <div class="texto-mototaxi">
-
-                        <p>
-                            Os mototáxis são uma alternativa prática para
-                            deslocamentos rápidos dentro de Januária,
-                            principalmente para quem está viajando sozinho
-                            ou precisa percorrer pequenas e médias distâncias.
-                        </p>
-
-                        <p>
-                            Aqui estão algumas opções de
-                            <strong>mototáxi em Januária</strong>.
-                            Utilize o mapa ao lado para visualizar os serviços
-                            encontrados na cidade e escolher a opção mais
-                            conveniente para o seu trajeto.
-                        </p>
-
+                        <p>Os mototáxis são uma alternativa prática para deslocamentos rápidos dentro de Januária, principalmente para quem está viajando sozinho ou precisa percorrer pequenas e médias distâncias.</p>
+                        <p>Aqui estão algumas opções de <strong>mototáxi em Januária</strong>. Utilize o mapa ao lado para visualizar os serviços encontrados na cidade e escolher a opção mais conveniente para o seu trajeto.</p>
                     </div>
-
-
-                    <!-- MAPA COM PESQUISA DE MOTOTÁXI -->
-
                     <div class="mapa-mototaxi">
-
                         <div class="mapa-box mapa-box-mototaxi">
-
-                            <iframe
-                                src="https://www.google.com/maps?q=mototaxi+em+Januaria+MG&output=embed"
-                                loading="lazy"
-                                allowfullscreen=""
-                                referrerpolicy="no-referrer-when-downgrade"
-                                title="Mototáxis em Januária"
-                            >
-                            </iframe>
-
+                            <iframe src="https://www.google.com/maps?q=mototaxi+em+Januaria+MG&output=embed" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Mototáxis em Januária"></iframe>
                         </div>
-
                     </div>
-
-
                 </div>
-
-
             </div>
-
         </section>
 
-
-
-        <!-- =====================================================
-             FOOTER
-        ====================================================== -->
-
         <wave-separator-component color="#222"></wave-separator-component>
-
-
     </main>
 
-
     <footer class="site-footer"></footer>
-
-
     <script src="../assets/js/menu_toggle.js"></script>
-
-
 </body>
-
 </html>
