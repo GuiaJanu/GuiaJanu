@@ -1,7 +1,7 @@
 const headerElement = document.querySelector('.site-header');
 
 const headerHTML = `
-        <a href="../../index.html"><img src="../../assets/img/logo/tauri_logo2.webp" alt="Logo GuiaJanu" class="logo-header"></a>
+        <a href="../../index.html"><img src="../../assets/img/logo/guiajanu_logo.webp" alt="Logo GuiaJanu" class="logo-header"></a>
         
         <input type="checkbox" id="menu-mobile-check" class="menu-checkbox">
 
