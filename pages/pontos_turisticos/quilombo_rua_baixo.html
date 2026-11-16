@@ -38,10 +38,21 @@
 
   <main>
     <section class="hero">
-      <div class="hero-img-wrapper">
-        <img class="hero-img" src="../../assets/img/pontos_turisticos_img/quilombo_urbano/img_0169.webp"
-          alt="Quilombo Urbano da Rua de Baixo em Januária">
-        <div class="copyright-tag hero-copyright copyright-tag---hero">© Guia Janu</div>
+      <!-- <div class="hero-img-wrapper"> -->
+        <!-- <img class="hero-img" src="../../assets/img/pontos_turisticos_img/quilombo_urbano/img_0169.webp"
+          alt="Quilombo Urbano da Rua de Baixo em Januária"> -->
+      <video id="hero-video" autoplay muted playsinline loop>
+                <source src="../../assets/videos/quilombo.mp4"" type="video/mp4">
+            </video>
+
+            <div class="video-controls">
+                <button id="volume-toggle" class="video-btn">
+                    <img id="volume-icon" src="../../assets/img/social_icons/sem_som.webp" alt="Mudo">
+                </button>
+
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0">
+            </div>
+        <div class="copyright-tag hero-copyright copyright-tag---hero">© @quilomboruadebaixo</div>
       </div>
 
       <div class="overlay">
@@ -72,13 +83,13 @@
               A história da Rua de Baixo está profundamente ligada ao trabalho e aos saberes de pescadores, lavadeiras, tratadeiras de peixe, aguadeiras, quitandeiras e vazanteiros, que construíram suas vidas às margens do Velho Chico e preservaram conhecimentos transmitidos entre gerações. Essa herança permanece viva nas manifestações culturais que caracterizam o território, como o <strong>Terno dos Temerosos, o Maculelê, a Puxada de Rede, a Capoeira, a Dança de São Gonçalo e os Reis de Bois</strong>.
             </p>
             <p>
-              O território ganha especial movimento durante os <strong>Festejos de Santa Cruz</strong>, realizados há mais de um século no mês de maio[cite: 11]. Nesse período, fé, memória e cultura se encontram em uma celebração, revelando uma comunidade que acolhe toda a cidade com muito afeto[cite: 11]. A programação é marcada por apresentações de artistas locais e pelas manifestações culturais que expressam a identidade do território.
+              O território ganha especial movimento durante os <strong>Festejos de Santa Cruz</strong>, realizados há mais de um século no mês de maio. Nesse período, fé, memória e cultura se encontram em uma celebração, revelando uma comunidade que acolhe toda a cidade com muito afeto. A programação é marcada por apresentações de artistas locais e pelas manifestações culturais que expressam a identidade do território.
             </p>
             <p>
-              Os festejos também são uma oportunidade para apreciar os tradicionais <strong>quitutes da Rua de Baixo</strong>, entre eles o <strong>cascarrão</strong> e os <strong>biscoitos fritos</strong>, sabores que atravessam gerações e integram a memória afetiva dos januarenses[cite: 11]. Gastronomia, religiosidade e manifestações culturais fazem do território um importante símbolo da <strong>ancestralidade</strong> e da <strong>identidade barranqueira</strong> de Januária.
+              Os festejos também são uma oportunidade para apreciar os tradicionais <strong>quitutes da Rua de Baixo</strong>, entre eles o <strong>cascarrão</strong> e os <strong>biscoitos fritos</strong>, sabores que atravessam gerações e integram a memória afetiva dos januarenses. Gastronomia, religiosidade e manifestações culturais fazem do território um importante símbolo da <strong>ancestralidade</strong> e da <strong>identidade barranqueira</strong> de Januária.
             </p>
             <p>
-              Atualmente, a <strong>Feira Gastronômica e Cultural da Praça Santa Cruz</strong> acontece semanalmente, às quintas-feiras, a partir das 19h, oferecendo ao visitante a oportunidade de conhecer sabores da culinária local e vivenciar manifestações da cultura do território[cite: 11]. No local, também é possível conhecer a réplica da <strong>Capela de Santa Cruz</strong>, referência que remete à antiga igreja que marcou o imaginário e as memórias das gerações mais antigas de januarenses.
+              Atualmente, a <strong>Feira Gastronômica e Cultural da Praça Santa Cruz</strong> acontece semanalmente, às quintas-feiras, a partir das 19h, oferecendo ao visitante a oportunidade de conhecer sabores da culinária local e vivenciar manifestações da cultura do território. No local, também é possível conhecer a réplica da <strong>Capela de Santa Cruz</strong>, referência que remete à antiga igreja que marcou o imaginário e as memórias das gerações mais antigas de januarenses.
             </p>
           </div>
 
@@ -151,27 +162,26 @@
       </div>
     </section>
 
-    <!-- <wave-separator-component color="#072530"></wave-separator-component> -->
+    <wave-separator-component color="#072530"></wave-separator-component>
 
-    <!-- SEÇÃO DE VÍDEO -->
-    <!--section class="section-azul">
+    <section class="section-azul">
       <div class="conteudo-limitado video-container">
-        <h2>Conheça em vídeo</h2>
+        <h2>Conheça em vídeo do Canal Sertões Gerais*</h2>
 
         <div class="video-wrapper">
-          <iframe src="" title="Vídeo do Quilombo da Rua de Baixo"
+          <iframe
+            src="https://www.youtube.com/embed/NhEjHFTrJuk"
+            title="Quilombo da Rua de Baixo"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
           </iframe>
         </div>
-        <div class="text-below-video">
-          <p>
-            *Produção externa e independente do Guia Janu.
-          </p>
-        </div>
+        <p style="font-size: 0.9em; margin-top: 10px; text-align: right; margin-right: 105px; opacity: 0.9;">
+          *Produção externa e independente do Guia Janu.
+        </p>
       </div>
-    </section-->
+    </section>
 
     <wave-separator-component color="#222"></wave-separator-component>
   </main>
