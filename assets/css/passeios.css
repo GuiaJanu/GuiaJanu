@@ -3,6 +3,18 @@
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Ubuntu', sans-serif;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-discover: #084222;
+    --color-plan: #8f2317;
+    --color-events: #fdd8a4;
+    --shadow-box: 0 6px 24px rgba(0, 0, 0, 0.3);
+    --transition-speed: 0.3s;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,56 +25,306 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
 body {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: #000;
     width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--color-white);
+    background-color: #222222;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 a {
-    color: #000;
+    color: var(--color-events);
     text-decoration: none;
+    transition: color var(--transition-speed) ease;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ffffff;
 }
 
 /* ==========================================================================
-   02. CONTAINER PRINCIPAL
+   02. CONTAINER PRINCIPAL E HERO BANNER
    ========================================================================== */
 .main-content {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 150px 20px 130px 20px;
     width: 100%;
-    box-sizing: border-box;
+    max-width: 100%;
     position: relative;
 }
 
-h1 {
-    font-size: 46px;
+.main-content .hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main-content .hero-section .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.main-content .hero-section .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55));
+    z-index: 1;
+}
+
+.main-content .hero-section .titulo-passeio {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 550px 20px 0 20px;
+}
+
+.main-content .hero-section .titulo-passeio h1 {
+    font-family: var(--font-secondary);
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ==========================================================================
-   05. RESPONSIVIDADE E ADAPTAÇÃO MOBILE (HERO BANNER)
+   03. WRAPPER E ONDAS ENTRE SEÇÕES
    ========================================================================== */
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+wave-separator-component {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================================================================
+   04. SEÇÕES DOS PASSEIOS COM CORES DISTINTAS
+   ========================================================================== */
+.passeio-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 20px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 0;
+}
+
+/* Cor 1: Verde escuro (mesma cor da discover-section) */
+.section-marujo {
+    background-color: #084222;
+}
+
+/* Cor 2: Vermelho terracota (mesma cor da plan-section) */
+.section-lancha {
+    background-color: #8f2317;
+}
+
+.passeio-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Espaço reservado na frente do texto para a imagem */
+.passeio-imagem {
+    flex: 0 0 380px;
+    min-height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 0, 0, 0.22);
+    box-shadow: var(--shadow-box);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passeio-imagem img {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Conteúdo textual à direita da imagem */
+.passeio-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: var(--color-white);
+}
+
+.passeio-texto h2 {
+    font-family: var(--font-secondary);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-white);
+    border-bottom: 3px solid var(--color-events);
+    padding-bottom: 10px;
+}
+
+.passeio-descricao {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: justify;
+}
+
+.roteiros-bloco h3 {
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    color: var(--color-events);
+    margin-bottom: 10px;
+}
+
+.info-embarque {
+    background-color: rgba(0, 0, 0, 0.22);
+    border-left: 4px solid var(--color-events);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    color: var(--color-white);
+}
+
+.lista-roteiros {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-roteiros li {
+    position: relative;
+    padding-left: 18px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.lista-roteiros li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: var(--color-events);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.diferenciais-box {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(253, 216, 164, 0.45);
+    padding: 14px 16px;
+    border-radius: 8px;
+    color: var(--color-white);
+}
+
+.contato-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 32px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+}
+
+.contato-box a {
+    font-weight: 700;
+    color: var(--color-events);
+}
+
+/* ==========================================================================
+   05. OBSERVAÇÃO LEGAL
+   ========================================================================== */
+.observacao-aviso {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.28);
+    border-left: 4px solid var(--color-events);
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+/* ==========================================================================
+   06. RESPONSIVIDADE E ADAPTAÇÃO MOBILE (HERO BANNER E SEÇÕES)
+   ========================================================================== */
+@media (max-width: 991px) {
+    .passeio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .passeio-imagem {
+        flex: none;
+        width: 100%;
+        max-width: 550px;
+        min-height: 280px;
+    }
+
+    .passeio-imagem img {
+        min-height: 280px;
+    }
+}
+
 @media (max-width: 768px) {
     .main-content .hero-section {
         height: 75vh; /* Altura responsiva oficial da listagem */
     }
-    
+
     .main-content .hero-section .titulo-passeio h1 {
         font-size: 6vw;
         letter-spacing: 0.15em;
+    }
+
+    .passeio-section {
+        padding: 40px 15px 150px;
+        gap: 30px;
+    }
+
+    .passeio-texto h2 {
+        font-size: 28px;
+    }
+
+    .passeio-descricao {
+        text-align: left;
     }
 }
 
@@ -77,8 +339,4 @@ h1 {
 .resize-transition-stopper .main-nav,
 .resize-transition-stopper .header-right {
     transition: none !important;
-}
-
-* {
-    outline: 1px solid red;
 }
